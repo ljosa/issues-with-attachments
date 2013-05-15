@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="issues.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="plupload/js/plupload.js"></script>
+    <script type="text/javascript" src="plupload/js/plupload.gears.js"></script>
+    <script type="text/javascript" src="plupload/js/plupload.silverlight.js"></script>
+    <script type="text/javascript" src="plupload/js/plupload.flash.js"></script>
+    <script type="text/javascript" src="plupload/js/plupload.browserplus.js"></script>
+    <script type="text/javascript" src="plupload/js/plupload.html4.js"></script>
+    <script type="text/javascript" src="plupload/js/plupload.html5.js"></script>
+    <script type="text/javascript" src="issues.js"></script>
+  </head>
+  <body>
+    <h1>Add CellProfiler issue to GitHub</h1>
+
+    <div class="part" id="login">
+      <a href="">Log in with your Github username and password</a>
+    </div>
+
+    <div class="part" id="enter">
+      <form>
+	<p><b>Repository:</b><br>
+	  <select name="repo" id="repo_select">
+	  </select></p>
+
+	<p><b>Title:</b><br>
+	  <input type="text" name="title"></p>
+
+	<p><b>Body:</b><br>
+	  <textarea name="body" cols="80" rows="20"></textarea></p>
+
+	<b>Attachments:</b><br>
+	<div id="container">
+	  <div id="runtime"></div>
+	  <div id="filelist"></div>
+	  <br />
+	  <a id="pickfiles" href="#">Attach files</a>
+	</div>
+
+	<p><input type="submit" value="Submit issue"></p>
+	<div class="spinner">Submitting…</div>
+	<div class="error_message"></div>
+      </form>
+    </div>
+  </body>
+</html>

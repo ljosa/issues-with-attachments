@@ -1,0 +1,4 @@
+div.part { display: none; }
+div.spinner { display: none; }
+#runtime { display: none; }
+input[name=title] { width: 580px; }
